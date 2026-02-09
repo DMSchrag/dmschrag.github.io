@@ -2906,3 +2906,47 @@ input, select, textarea {
 			}
 
 	}
+
+
+/* About page image+text rows */
+.about-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.about-row {
+  display: flex;
+  gap: 2em;
+  align-items: flex-start;
+  flex-wrap: wrap; /* stacks on small screens */
+}
+
+.about-img {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.35em;
+}
+
+.about-text {
+  flex: 1 1 0;
+  min-width: 260px;
+}
+
+.about-text h4 {
+  margin: 0 0 0.5em 0;
+}
+
+/* On small screens: image above text */
+@media screen and (max-width: 736px) {
+  .about-img, .about-text {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
