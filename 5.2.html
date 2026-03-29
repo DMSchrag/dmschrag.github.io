@@ -5,6 +5,28 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+
+    <style>
+        .project-row {
+            margin-bottom: 3em;
+            align-items: center;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 6px;
+        }
+
+        .project-text h3 {
+            margin-bottom: 0.5em;
+        }
+
+        .project-text p {
+            margin-bottom: 0.75em;
+        }
+    </style>
 </head>
 
 <body class="no-sidebar is-preload">
@@ -17,7 +39,7 @@
     <section id="banner">
         <header>
             <h2>Physical MVP</h2>
-            <p>First iteration of the wind tunnel</p>
+            <p>Wind tunnel first iteration</p>
         </header>
     </section>
 
@@ -31,100 +53,131 @@
 <section>
 
 <header class="major">
-    <h2>Process (MVP & Iteration)</h2>
+    <h2>Process</h2>
 </header>
 
-<p>
-We approached this as a tinkering process, focusing on building a minimal viable product (MVP) as fast as possible.
-Instead of fully planning everything, we started building early and figured things out along the way.
-</p>
+<!-- BLOCK 1 -->
+<div class="row project-row">
+    <div class="col-5 col-12-medium project-image">
+        <img src="images/windtunnel.jpeg" alt="Wind tunnel">
+    </div>
+    <div class="col-7 col-12-medium project-text">
+        <h3>MVP Approach</h3>
+        <p>
+            We approached this as a tinkering process, focusing on building a minimal viable product (MVP) as fast as possible.
+            Instead of fully designing everything upfront, we started building early and worked iteratively.
+        </p>
+        <p>
+            The goal was to test functionality quickly rather than aiming for a finished product.
+        </p>
+    </div>
+</div>
 
-<!-- IMAGE 1 -->
-<span class="image featured">
-    <img src="images/windtunnel.jpeg" alt="Wind tunnel structure">
-</span>
+<!-- BLOCK 2 -->
+<div class="row project-row">
+    <div class="col-7 col-12-medium project-text">
+        <h3>Working with Constraints</h3>
+        <p>
+            We reused a 350W motor from an old milling machine.
+            This constraint defined a large part of the system and forced us to adapt the design around it.
+        </p>
+        <p>
+            Using existing components helped us move directly into rapid prototyping.
+        </p>
+    </div>
+    <div class="col-5 col-12-medium project-image">
+        <img src="images/motor2.jpeg" alt="Motor">
+    </div>
+</div>
 
-<p>
-We reused a 350W motor from an old milling machine.
-This created a constraint, but also gave us a clear starting point.
-Using existing parts helped us move faster into prototyping.
-</p>
+<!-- BLOCK 3 -->
+<div class="row project-row">
+    <div class="col-5 col-12-medium project-image">
+        <img src="images/motor_adapter.jpeg" alt="Motor adapter">
+    </div>
+    <div class="col-7 col-12-medium project-text">
+        <h3>Rapid Prototyping</h3>
+        <p>
+            To integrate the motor, we created a motor adapter.
+            This was a quick and functional solution, not optimized, but good enough for testing.
+        </p>
+        <p>
+            This reflects a rapid prototyping approach where speed is more important than perfection.
+        </p>
+    </div>
+</div>
 
-<!-- IMAGE 2 -->
-<span class="image featured">
-    <img src="images/motor2.jpeg" alt="Motor">
-</span>
+<!-- BLOCK 4 -->
+<div class="row project-row">
+    <div class="col-7 col-12-medium project-text">
+        <h3>Digital to Physical</h3>
+        <p>
+            I created a CAD sketch for the funnel geometry, which was then laser cut from wood.
+            This allowed us to quickly move from design to physical components.
+        </p>
+        <p>
+            The digital model acted as light scaffolding to guide the build without restricting changes.
+        </p>
+    </div>
+    <div class="col-5 col-12-medium project-image">
+        <img src="images/funnel.jpeg" alt="Funnel">
+    </div>
+</div>
 
-<p>
-To make the motor usable, we had to design and build a motor adapter.
-This was a quick solution, not optimized, but good enough for testing.
-</p>
+<!-- BLOCK 5 -->
+<div class="row project-row">
+    <div class="col-5 col-12-medium project-image">
+        <img src="images/motor_holder.jpeg" alt="Motor holder">
+    </div>
+    <div class="col-7 col-12-medium project-text">
+        <h3>Co-Design</h3>
+        <p>
+            Different parts were developed in parallel.
+            While I worked on the funnel, someone else designed and built the motor mount.
+        </p>
+        <p>
+            This is a co-design process where multiple components are created independently and later combined.
+        </p>
+    </div>
+</div>
 
-<!-- IMAGE 3 -->
-<span class="image featured">
-    <img src="images/motor_adapter.jpeg" alt="Motor adapter">
-</span>
+<!-- BLOCK 6 -->
+<div class="row project-row">
+    <div class="col-7 col-12-medium project-text">
+        <h3>Assembly & Iteration</h3>
+        <p>
+            All parts were assembled into a first MVP to test airflow and general functionality.
+        </p>
+        <p>
+            The process is iterative: build, test, evaluate, and improve.
+            The goal is to learn from the prototype rather than finalize it.
+        </p>
+    </div>
+    <div class="col-5 col-12-medium project-image">
+        <img src="images/2e4968a5-d1b0-4cf7-8782-7fc60314d5ff.png" alt="Assembly">
+    </div>
+</div>
 
-<p>
-At the same time, I created a CAD sketch for the funnel shape.
-This was then laser cut from wood, which allowed us to quickly produce precise parts.
-</p>
-
-<!-- IMAGE 4 -->
-<span class="image featured">
-    <img src="images/funnel.jpeg" alt="Funnel">
-</span>
-
-<p>
-Another part of the system was the motor mount, which was designed and built separately.
-This shows a co-design process, where different parts are developed in parallel.
-</p>
-
-<!-- IMAGE 5 -->
-<span class="image featured">
-    <img src="images/motor_holder.jpeg" alt="Motor holder">
-</span>
-
-<p>
-After creating all components, we assembled everything into a first MVP.
-The focus was not on perfection, but on testing functionality as early as possible.
-</p>
-
-<!-- IMAGE 6 -->
-<span class="image featured">
-    <img src="images/2e4968a5-d1b0-4cf7-8782-7fc60314d5ff.png" alt="Assembly">
-</span>
-
-<p>
-The process was iterative.
-We build, test, evaluate and then improve.
-Instead of aiming for a final solution, we focused on learning from each step.
-</p>
-
-<h3>Scaffolding</h3>
-
-<p>
-Some scaffolding was needed to support the process.
-This included CAD sketches as a guide, access to tools like the laser cutter,
-and basic examples of how components could be connected.
-</p>
-
-<p>
-At the same time, the scaffolding was kept minimal.
-The idea was not to follow strict instructions, but to allow exploration and adaptation.
-The materials and partial designs acted as a starting point rather than a fixed solution.
-</p>
-
-<h3>Conclusion</h3>
-
-<p>
-Overall, the project follows a tinkering-based design method:
-rapid prototyping, working with constraints, testing early and iterating.
-The MVP helped us understand what works and what needs to be improved in the next version.
-</p>
+<!-- BLOCK 7 -->
+<div class="row project-row">
+    <div class="col-5 col-12-medium project-image">
+        <img src="images/motor.jpeg" alt="Process detail">
+    </div>
+    <div class="col-7 col-12-medium project-text">
+        <h3>Scaffolding</h3>
+        <p>
+            The scaffolding in this project was minimal but important.
+            CAD sketches, access to tools, and existing components provided enough structure to get started.
+        </p>
+        <p>
+            At the same time, the process remained open.
+            The setup encouraged experimentation rather than following strict instructions.
+        </p>
+    </div>
+</div>
 
 <ul class="actions">
-    <li><a href="index.html" class="button">← Back to portfolio</a></li>
+    <li><a href="index.html" class="button">← Back to Portfolio</a></li>
 </ul>
 
 </section>
