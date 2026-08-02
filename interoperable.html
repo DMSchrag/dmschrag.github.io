@@ -9,18 +9,22 @@
     <title>Interoperability - Mastering Tinkering</title>
 
     <meta charset="utf-8">
+
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1, user-scalable=no"
     >
 
-    <!-- The assets folder is next to this HTML file -->
+    <!--
+        This HTML file is located directly above
+        the assets and images folders.
+    -->
     <link rel="stylesheet" href="assets/css/main.css">
 
     <style>
-        /* =============================================
+        /* =========================================
            INTRODUCTION
-        ============================================= */
+        ========================================= */
 
         .project-introduction {
             max-width: 900px;
@@ -32,20 +36,22 @@
             margin-bottom: 0;
         }
 
-        /* =============================================
-           PROJECT TIMELINE
-        ============================================= */
+        /* =========================================
+           PROJECT ENTRIES
+        ========================================= */
 
-        #project-timeline {
+        .project-list {
             display: flex;
             flex-direction: column;
             gap: 3em;
         }
 
-        /* One image-and-text section */
         .project-entry {
             display: grid;
-            grid-template-columns: minmax(280px, 5fr) minmax(300px, 7fr);
+            grid-template-columns:
+                minmax(280px, 5fr)
+                minmax(300px, 7fr);
+
             gap: 2.5em;
             align-items: center;
 
@@ -58,9 +64,9 @@
             border-bottom: 0;
         }
 
-        /* =============================================
-           IMAGE
-        ============================================= */
+        /* =========================================
+           IMAGES
+        ========================================= */
 
         .project-image {
             width: 100%;
@@ -71,6 +77,8 @@
             display: block;
             width: 100%;
             height: auto;
+            max-height: 550px;
+
             object-fit: contain;
 
             background: #ffffff;
@@ -78,12 +86,12 @@
             box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
         }
 
-        /* =============================================
+        /* =========================================
            TEXT
-        ============================================= */
+        ========================================= */
 
         .project-text h3 {
-            margin-bottom: 0.4em;
+            margin-bottom: 0.65em;
         }
 
         .project-text p {
@@ -96,6 +104,7 @@
 
         .project-step {
             display: inline-block;
+
             margin-bottom: 0.8em;
             padding: 0.3em 0.8em;
 
@@ -109,43 +118,9 @@
             text-transform: uppercase;
         }
 
-        .project-date {
-            display: block;
-            margin-bottom: 1.2em;
-
-            color: #777777;
-            font-size: 0.85em;
-            font-weight: 700;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-        }
-
-        /* =============================================
-           EDITING INFORMATION
-        ============================================= */
-
-        .editing-note {
-            margin-top: 3em;
-            padding: 1.5em;
-
-            background: rgba(0, 0, 0, 0.04);
-            border-left: solid 4px #d52349;
-            border-radius: 4px;
-        }
-
-        .editing-note p {
-            margin-bottom: 0;
-        }
-
-        .editing-note code {
-            padding: 0.15em 0.35em;
-            background: rgba(0, 0, 0, 0.08);
-            border-radius: 3px;
-        }
-
-        /* =============================================
-           RESPONSIVE LAYOUT
-        ============================================= */
+        /* =========================================
+           MOBILE AND TABLET LAYOUT
+        ========================================= */
 
         @media screen and (max-width: 980px) {
             .project-entry {
@@ -164,7 +139,7 @@
                 text-align: left;
             }
 
-            #project-timeline {
+            .project-list {
                 gap: 2.5em;
             }
 
@@ -179,9 +154,9 @@
 
 <div id="page-wrapper">
 
-    <!-- =============================================
+    <!-- =========================================
          HEADER
-    ============================================== -->
+    ========================================== -->
 
     <section id="header">
 
@@ -194,7 +169,7 @@
                 <h2>Interoperability</h2>
 
                 <p>
-                    Developing a building block that can connect with
+                    Making my building block interoperable with
                     mechanical and electronic components.
                 </p>
             </header>
@@ -202,9 +177,9 @@
 
     </section>
 
-    <!-- =============================================
+    <!-- =========================================
          MAIN CONTENT
-    ============================================== -->
+    ========================================== -->
 
     <section id="main">
         <div class="container">
@@ -218,36 +193,157 @@
                             <h2>Development Process</h2>
                         </header>
 
+                        <!-- General introduction -->
                         <div class="project-introduction">
                             <p>
-                                Write your general introduction here. Explain what
-                                interoperability means in your project, which parts
-                                need to work together, and what you wanted to achieve.
+                                Write your introduction here. Explain what
+                                interoperability means in your project, which
+                                components need to work together, and what you
+                                wanted to achieve with the building block.
                             </p>
                         </div>
 
-                        <!--
-                            The sections are automatically sorted by data-datetime.
+                        <div class="project-list">
 
-                            Date format:
-                            YYYY-MM-DDTHH:MM:SS
+                            <!-- =====================================
+                                 STEP 1
+                            ====================================== -->
 
-                            Example:
-                            data-datetime="2026-03-15T14:30:00"
+                            <article class="project-entry">
 
-                            The earliest date appears first.
-                        -->
+                                <figure class="project-image">
+                                    <img
+                                        src="images/knob1.PNG"
+                                        alt="First connector concept"
+                                        loading="lazy"
+                                    >
+                                </figure>
 
-                        <div id="project-timeline" data-order="ascending">
+                                <div class="project-text">
+                                    <span class="project-step">Step 1</span>
 
-                            <!-- =================================
-                                 ENTRY 1
-                            ================================== -->
+                                    <h3>First Connector Concept</h3>
 
-                            <article
-                                class="project-entry"
-                                data-datetime="2026-01-10T10:00:00"
-                            >
+                                    <p>
+                                        Write your text here. Explain the purpose
+                                        of this first connector design and which
+                                        components it was intended to connect.
+                                    </p>
+
+                                    <p>
+                                        Add another paragraph here when you need
+                                        more space for your explanation.
+                                    </p>
+                                </div>
+
+                            </article>
+
+                            <!-- =====================================
+                                 STEP 2
+                            ====================================== -->
+
+                            <article class="project-entry">
+
+                                <figure class="project-image">
+                                    <img
+                                        src="images/knob2.PNG"
+                                        alt="Front view of the connector geometry"
+                                        loading="lazy"
+                                    >
+                                </figure>
+
+                                <div class="project-text">
+                                    <span class="project-step">Step 2</span>
+
+                                    <h3>Connector Geometry</h3>
+
+                                    <p>
+                                        Write your text here. Describe the shape
+                                        of the connector and explain the purpose
+                                        of the opening between its two sections.
+                                    </p>
+
+                                    <p>
+                                        You can discuss dimensions, tolerances,
+                                        friction, flexibility, or how another
+                                        component fits into the connector.
+                                    </p>
+                                </div>
+
+                            </article>
+
+                            <!-- =====================================
+                                 STEP 3
+                            ====================================== -->
+
+                            <article class="project-entry">
+
+                                <figure class="project-image">
+                                    <img
+                                        src="images/knob3.PNG"
+                                        alt="Connector with a round mounting surface"
+                                        loading="lazy"
+                                    >
+                                </figure>
+
+                                <div class="project-text">
+                                    <span class="project-step">Step 3</span>
+
+                                    <h3>Mounting Interface</h3>
+
+                                    <p>
+                                        Write your text here. Explain how the
+                                        round mounting surface attaches the
+                                        connector to another component.
+                                    </p>
+
+                                    <p>
+                                        Describe how this design helps different
+                                        parts of the project work together.
+                                    </p>
+                                </div>
+
+                            </article>
+
+                            <!-- =====================================
+                                 STEP 4
+                            ====================================== -->
+
+                            <article class="project-entry">
+
+                                <figure class="project-image">
+                                    <img
+                                        src="images/knob4.PNG"
+                                        alt="Refined connector design"
+                                        loading="lazy"
+                                    >
+                                </figure>
+
+                                <div class="project-text">
+                                    <span class="project-step">Step 4</span>
+
+                                    <h3>Refined Connector Design</h3>
+
+                                    <p>
+                                        Write your text here. Describe the changes
+                                        made to this connector and explain how it
+                                        differs from the earlier versions.
+                                    </p>
+
+                                    <p>
+                                        Explain which problems were solved and
+                                        how the connector became more reliable.
+                                    </p>
+                                </div>
+
+                            </article>
+
+                            <!-- =====================================
+                                 STEP 5
+                            ====================================== -->
+
+                            <article class="project-entry">
+
                                 <figure class="project-image">
                                     <img
                                         src="images/bbversion 1.PNG"
@@ -257,70 +353,65 @@
                                 </figure>
 
                                 <div class="project-text">
-                                    <span class="project-step">Step 1</span>
+                                    <span class="project-step">Step 5</span>
 
                                     <h3>First Building Block Version</h3>
-
-                                    <time class="project-date"></time>
 
                                     <p>
                                         Write your text here. Describe the first
                                         version of the building block and explain
-                                        the purpose of the design.
+                                        the purpose of its overall geometry.
                                     </p>
 
                                     <p>
-                                        You can explain which parts it should connect
-                                        to, what worked, and what needed to be changed.
+                                        Explain how the connector designs
+                                        influenced this version of the building
+                                        block.
                                     </p>
                                 </div>
+
                             </article>
 
-                            <!-- =================================
-                                 ENTRY 2
-                            ================================== -->
+                            <!-- =====================================
+                                 STEP 6
+                            ====================================== -->
 
-                            <article
-                                class="project-entry"
-                                data-datetime="2026-01-18T14:30:00"
-                            >
+                            <article class="project-entry">
+
                                 <figure class="project-image">
                                     <img
                                         src="images/bb360foil.PNG"
-                                        alt="Building block with an aerodynamic profile"
+                                        alt="Aerodynamic building block design"
                                         loading="lazy"
                                     >
                                 </figure>
 
                                 <div class="project-text">
-                                    <span class="project-step">Step 2</span>
+                                    <span class="project-step">Step 6</span>
 
-                                    <h3>Adapting the Building Block Shape</h3>
-
-                                    <time class="project-date"></time>
+                                    <h3>Adapting the Building Block</h3>
 
                                     <p>
-                                        Write your text here. Describe why you changed
-                                        the shape of the building block and how the new
-                                        geometry relates to the airplane.
+                                        Write your text here. Describe why the
+                                        shape of the building block was changed
+                                        and how it relates to the airplane.
                                     </p>
 
                                     <p>
-                                        You can discuss dimensions, aerodynamic
-                                        considerations, mounting points, or internal
-                                        space for electronics.
+                                        You can discuss its aerodynamic shape,
+                                        mounting points, internal space, and
+                                        openings for electronic components.
                                     </p>
                                 </div>
+
                             </article>
 
-                            <!-- =================================
-                                 ENTRY 3
-                            ================================== -->
+                            <!-- =====================================
+                                 STEP 7
+                            ====================================== -->
 
-                            <article
-                                class="project-entry"
-                                data-datetime="2026-01-25T09:15:00"
-                            >
+                            <article class="project-entry">
+
                                 <figure class="project-image">
                                     <img
                                         src="images/building_blockf360.PNG"
@@ -330,189 +421,133 @@
                                 </figure>
 
                                 <div class="project-text">
-                                    <span class="project-step">Step 3</span>
+                                    <span class="project-step">Step 7</span>
 
                                     <h3>Integration With the Airplane</h3>
 
-                                    <time class="project-date"></time>
-
                                     <p>
-                                        Write your text here. Explain how the building
-                                        block is integrated into the airplane structure.
+                                        Write your text here. Explain how the
+                                        building block fits into the airplane and
+                                        how it connects with the wing structure.
                                     </p>
 
                                     <p>
-                                        Describe the openings, attachment points,
-                                        electronic connections, or other features that
-                                        make the parts interoperable.
+                                        Describe the internal spaces, mounting
+                                        points, ventilation openings, and
+                                        electronic connections.
                                     </p>
                                 </div>
+
                             </article>
 
-                            <!-- =================================
-                                 ENTRY 4
-                            ================================== -->
+                            <!-- =====================================
+                                 STEP 8
+                            ====================================== -->
 
-                            <article
-                                class="project-entry"
-                                data-datetime="2026-02-02T11:00:00"
-                            >
+                            <article class="project-entry">
+
                                 <figure class="project-image">
                                     <img
-                                        src="images/knob1.PNG"
-                                        alt="First connector knob design"
+                                        src="images/flugi1.jpeg"
+                                        alt="Wooden wing structures during construction"
                                         loading="lazy"
                                     >
                                 </figure>
 
                                 <div class="project-text">
-                                    <span class="project-step">Step 4</span>
+                                    <span class="project-step">Step 8</span>
 
-                                    <h3>First Connector Concept</h3>
-
-                                    <time class="project-date"></time>
+                                    <h3>Constructing the Wings</h3>
 
                                     <p>
-                                        Write your text here. Explain the purpose of
-                                        this connector and which parts it should join.
+                                        Write your text here. Describe how the
+                                        wooden wing structures were constructed
+                                        and prepared for integration with the
+                                        building block.
                                     </p>
 
                                     <p>
-                                        Describe the first connection mechanism and
-                                        any problems you discovered during modelling
-                                        or testing.
+                                        You can explain the materials, internal
+                                        ribs, servo wiring, covering, and other
+                                        construction details.
                                     </p>
                                 </div>
+
                             </article>
 
-                            <!-- =================================
-                                 ENTRY 5
-                            ================================== -->
+                            <!-- =====================================
+                                 STEP 9
+                            ====================================== -->
 
-                            <article
-                                class="project-entry"
-                                data-datetime="2026-02-07T15:45:00"
-                            >
+                            <article class="project-entry">
+
                                 <figure class="project-image">
                                     <img
-                                        src="images/knob2.PNG"
-                                        alt="Front view of the connector design"
+                                        src="images/flugi2.jpeg"
+                                        alt="Electronic components installed inside the airplane"
                                         loading="lazy"
                                     >
                                 </figure>
 
                                 <div class="project-text">
-                                    <span class="project-step">Step 5</span>
+                                    <span class="project-step">Step 9</span>
 
-                                    <h3>Connector Geometry</h3>
-
-                                    <time class="project-date"></time>
+                                    <h3>Installing the Electronics</h3>
 
                                     <p>
-                                        Write your text here. Describe the connector
-                                        geometry and explain the function of the two
-                                        sections and the opening between them.
+                                        Write your text here. Describe how the
+                                        battery, flight controller, wiring, motor,
+                                        and other electronic components were
+                                        installed inside the building block.
                                     </p>
 
                                     <p>
-                                        You can discuss dimensions, clearances,
-                                        flexibility, friction, or how another part
-                                        is inserted into the connector.
+                                        Explain how the building block provides
+                                        enough space, access, ventilation, and
+                                        support for the electronics.
                                     </p>
                                 </div>
+
                             </article>
 
-                            <!-- =================================
-                                 ENTRY 6
-                            ================================== -->
+                            <!-- =====================================
+                                 STEP 10
+                            ====================================== -->
 
-                            <article
-                                class="project-entry"
-                                data-datetime="2026-02-12T13:20:00"
-                            >
+                            <article class="project-entry">
+
                                 <figure class="project-image">
                                     <img
-                                        src="images/knob3.PNG"
-                                        alt="Perspective view of the connector"
+                                        src="images/flugi3.jpeg"
+                                        alt="Assembled airplane with wings and central building block"
                                         loading="lazy"
                                     >
                                 </figure>
 
                                 <div class="project-text">
-                                    <span class="project-step">Step 6</span>
+                                    <span class="project-step">Step 10</span>
 
-                                    <h3>Mounting Interface</h3>
-
-                                    <time class="project-date"></time>
+                                    <h3>Final Assembly</h3>
 
                                     <p>
-                                        Write your text here. Explain how the round
-                                        mounting surface connects the knob to another
-                                        component.
+                                        Write your text here. Describe the final
+                                        assembly of the wings, building block,
+                                        motor, electronics, and other components.
                                     </p>
 
                                     <p>
-                                        Describe how this version improves the
-                                        interoperability between the building block
-                                        and the connected component.
-                                    </p>
-                                </div>
-                            </article>
-
-                            <!-- =================================
-                                 ENTRY 7
-                            ================================== -->
-
-                            <article
-                                class="project-entry"
-                                data-datetime="2026-02-18T16:00:00"
-                            >
-                                <figure class="project-image">
-                                    <img
-                                        src="images/knob4.PNG"
-                                        alt="Side view of the refined connector"
-                                        loading="lazy"
-                                    >
-                                </figure>
-
-                                <div class="project-text">
-                                    <span class="project-step">Step 7</span>
-
-                                    <h3>Refined Connector Design</h3>
-
-                                    <time class="project-date"></time>
-
-                                    <p>
-                                        Write your text here. Describe the changes
-                                        made to the final connector and explain why
-                                        this version performs better.
-                                    </p>
-
-                                    <p>
-                                        Explain how the final connector interacts
-                                        with the building block, electronics, airplane,
-                                        or other modular elements.
+                                        Explain how the completed design
+                                        demonstrates interoperability between the
+                                        structural, mechanical, and electronic
+                                        parts of the airplane.
                                     </p>
                                 </div>
+
                             </article>
 
                         </div>
 
-                        <!-- =================================
-                             EDITING NOTE
-                        ================================== -->
-
-                        <div class="editing-note">
-                            <p>
-                                <strong>Editing note:</strong>
-                                Replace the value of
-                                <code>data-datetime</code>
-                                in each section with the real date and time.
-                                The sections will automatically move into
-                                chronological order.
-                            </p>
-                        </div>
-
+                        <!-- Back button -->
                         <ul class="actions">
                             <li>
                                 <a href="index.html" class="button">
@@ -531,9 +566,9 @@
 
 </div>
 
-<!-- =============================================
+<!-- =========================================
      TEMPLATE SCRIPTS
-============================================== -->
+========================================== -->
 
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/jquery.dropotron.min.js"></script>
@@ -541,64 +576,6 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
-
-<!-- =============================================
-     DATE AND TIME SORTING
-============================================== -->
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const timeline = document.getElementById("project-timeline");
-
-        if (!timeline) {
-            return;
-        }
-
-        const entries = Array.from(
-            timeline.querySelectorAll(".project-entry")
-        );
-
-        const order = timeline.dataset.order || "ascending";
-
-        entries.sort(function (entryA, entryB) {
-            const dateA = new Date(entryA.dataset.datetime);
-            const dateB = new Date(entryB.dataset.datetime);
-
-            if (order === "descending") {
-                return dateB - dateA;
-            }
-
-            return dateA - dateB;
-        });
-
-        const dateFormatter = new Intl.DateTimeFormat("en-GB", {
-            day: "2-digit",
-            month: "long",
-            year: "numeric",
-            hour: "2-digit",
-            minute: "2-digit"
-        });
-
-        entries.forEach(function (entry, index) {
-            const dateValue = entry.dataset.datetime;
-            const date = new Date(dateValue);
-
-            const dateElement = entry.querySelector(".project-date");
-            const stepElement = entry.querySelector(".project-step");
-
-            if (dateElement && !Number.isNaN(date.getTime())) {
-                dateElement.dateTime = dateValue;
-                dateElement.textContent = dateFormatter.format(date);
-            }
-
-            if (stepElement) {
-                stepElement.textContent = "Step " + (index + 1);
-            }
-
-            timeline.appendChild(entry);
-        });
-    });
-</script>
 
 </body>
 </html>
