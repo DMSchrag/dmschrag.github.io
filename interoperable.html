@@ -196,12 +196,30 @@
                         <!-- General introduction -->
                         <div class="project-introduction">
                             <p>
-                                For interoperability we take our building block the fuselage and want it to be able to interconnect with the wings. 
-                                The general idea is to have an easy click and put together system, no screws no hatches, just simply clipping it together.
-                                So what is it that needs to be considered? For once, our wings have a servo each in them, so an electrical interface, so we have a male/female plug pair.
-                                Also for the stability of the plain a carbon rod is inserted through the center of lift through the whole fuselage and connects the wing as well.
-                                Now if there was just the carbon rod, the building block would not be tightly secured, it could pitch and for that we need more attachment points, which will be done
-                                in the form of tiny plugs inserted through holes in the inside of the building block and then pointing outwards. Later down, more information on the design choices.
+                                For interoperability we take our building block, the
+                                fuselage, and want it to be able to interconnect with
+                                the wings. The general idea is to have an easy click
+                                and put together system, no screws, no hatches, just
+                                simply clipping it together.
+                                <br><br>
+                                So what is it that needs to be considered? For one,
+                                our wings have a servo each in them, so we need an
+                                electrical interface, basically a male and female
+                                plug pair. Also for the stability of the plane, a
+                                carbon rod is inserted through the center of lift,
+                                through the whole fuselage, and connects both wings
+                                as well.
+                                <br><br>
+                                Now if there was just the carbon rod, the building
+                                block would not be tightly secured. The wings could
+                                still pitch, and for that we need more attachment
+                                points. These will be done in the form of tiny plugs
+                                inserted through holes in the inside of the building
+                                block and then pointing outwards. This way the wings
+                                are held in position mechanically while the servo
+                                plugs connect at the same time. Later down there is
+                                more information on the design choices and all the
+                                little problems that came with them.
                             </p>
                         </div>
 
@@ -227,10 +245,23 @@
                                     <h3>First Connector Concept</h3>
 
                                     <p>
-                                        The first design came up rather quickly, open on both sides with a slit so one can
-                                        press it together to fit in both holes. Using the sledged edge as a guide through the hole. 
+                                        The first design came up rather quickly. It
+                                        was open on both sides and had a slit through
+                                        the middle, so one can press both sides
+                                        together and fit it through the two holes.
+                                        The sloped edges were used as a guide, so the
+                                        connector would hopefully slide through the
+                                        holes instead of getting stuck on the edge.
                                     </p>
 
+                                    <p>
+                                        The idea was that the connector would expand
+                                        again after it had been pushed through. This
+                                        would then create enough tension to keep the
+                                        wing connected, while still making it possible
+                                        to remove the wing again without using any
+                                        screws.
+                                    </p>
                                 </div>
 
                             </article>
@@ -255,10 +286,31 @@
                                     <h3>Connector Geometry</h3>
 
                                     <p>
-                                        There are quite a few dimensions at play, for one the depth of the slits and the height of it.
-                                        Depnding on the height I can press it more easily through both of the holes, yet it will be easier to break.
-                                        Sadly this iteration did not really work. For once I realized I only needed a lit on one side and could make a flat area on the other
-                                        so that I can press it in more easily from the inside of the building block.
+                                        There are quite a few dimensions at play.
+                                        For one, there is the depth of the slit and
+                                        the height of it. Depending on the height I
+                                        can press it more easily through both of the
+                                        holes, yet it will also become thinner and
+                                        easier to break.
+                                    </p>
+
+                                    <p>
+                                        Sadly this iteration did not really work.
+                                        For one I realized I only needed a slit on
+                                        one side. On the other side I could make a
+                                        flat area, so that I can press the connector
+                                        in more easily from the inside of the
+                                        building block. With both sides being able
+                                        to move, the connector was a bit too flexible
+                                        and was harder to control while inserting it.
+                                    </p>
+
+                                    <p>
+                                        This was also the point where I realized how
+                                        important the printing tolerances would be.
+                                        A very small difference in the slit or in the
+                                        outside diameter already changed how much
+                                        force was needed to push it through.
                                     </p>
                                 </div>
 
@@ -284,8 +336,23 @@
                                     <h3>Mounting Interface</h3>
 
                                     <p>
-                                        So the mounting interface changed quite a bit, for once it is only open on one side and multiple diameter changes
-                                        take place. There are now also two slopes at the ende of the connector. More to that in Step 4.
+                                        So the mounting interface changed quite a
+                                        bit. For one it is only open on one side,
+                                        while the other side now has a large and flat
+                                        loading area. This makes it much easier to
+                                        push the connector from the inside of the
+                                        fuselage without the whole thing bending
+                                        away.
+                                    </p>
+
+                                    <p>
+                                        Multiple diameter changes now also take
+                                        place along the connector. Every diameter
+                                        has a slightly different job, either fitting
+                                        inside the wall, supporting the wing, or
+                                        locking the wing in place. There are now also
+                                        two slopes at the end of the connector. More
+                                        to that in Step 4.
                                     </p>
                                 </div>
 
@@ -311,23 +378,55 @@
                                     <h3>Refined Connector Design</h3>
 
                                     <p>
-                                        Here we can see from left to right first the big loading area for the building block inside afterwards a
-                                        the smallest diameter which exactly fits whe wall thick ness of the building block, then the middle part there the actual
-                                        wing wall lays on. After that are the two sloped ares, one so the wing can not easily slip of to the side and the one on the far right so that
-                                        the connector can even be pushed through the holes. The inner slit is there to create tension and friction to make it more lockable.
-    
+                                        Here we can see from left to right first the
+                                        big loading area for the inside of the
+                                        building block. Afterwards comes the smallest
+                                        diameter, which exactly fits the wall
+                                        thickness of the building block. This means
+                                        that the connector can sit in the wall without
+                                        moving around too much.
                                     </p>
 
                                     <p>
-                                       I had a lot of problems with toleances and had about 8 iterations at the end, sadly no picture, but the slopes and the height of the slit
-                                        took the most iterations, because it had to snap into the wing, yet not damage the delicate balsa wood which was quite a challenge.
-                                        The connectors were 3D printed in the end. Two on each side.
+                                        Then comes the middle part where the actual
+                                        wing wall lays on. After that are the two
+                                        sloped areas. The first slope is there so the
+                                        wing cannot easily slip off to the side, while
+                                        the slope on the far right is there so the
+                                        connector can even be pushed through the
+                                        holes in the first place.
+                                    </p>
+
+                                    <p>
+                                        The inner slit is there to create tension and
+                                        friction, making the connection more lockable.
+                                        When the connector is pushed through the wing,
+                                        the two sides can move closer together. After
+                                        passing through the hole they expand again,
+                                        which creates the snapping effect.
+                                    </p>
+
+                                    <p>
+                                        I had a lot of problems with tolerances and
+                                        had about eight iterations at the end, sadly
+                                        no picture of every single one. The slopes
+                                        and the height of the slit took the most
+                                        iterations, because it had to snap into the
+                                        wing, yet not damage the delicate balsa wood,
+                                        which was quite a challenge.
+                                    </p>
+
+                                    <p>
+                                        The connectors were 3D printed in the end,
+                                        with two connectors on each side of the
+                                        fuselage. Together they stop the wings from
+                                        pitching and help keep both sides in the
+                                        correct position.
                                     </p>
                                 </div>
 
                             </article>
 
-                        
                             <!-- =====================================
                                  STEP 5
                             ====================================== -->
@@ -345,18 +444,26 @@
                                 <div class="project-text">
                                     <span class="project-step">Step 5</span>
 
-                                    <h3>Adapting the Building Block</h3>
+                                    <h3>Wing Side</h3>
 
                                     <p>
-                                        Write your text here. Describe why the
-                                        shape of the building block was changed
-                                        and how it relates to the airplane.
+                                        This is the wing side in Fusion 360. One can
+                                        see here from left to right the rectangular
+                                        hole for the servo plug, the big round hole
+                                        for the carbon rod, and two more holes for
+                                        the above mentioned connector plugs to
+                                        prevent pitching.
                                     </p>
 
                                     <p>
-                                        You can discuss its aerodynamic shape,
-                                        mounting points, internal space, and
-                                        openings for electronic components.
+                                        All of these holes need to line up with the
+                                        matching parts on the fuselage. The carbon
+                                        rod takes most of the structural load, while
+                                        the two small connectors keep the wing from
+                                        rotating around the rod. At the same time the
+                                        servo plug has to meet its other half without
+                                        needing to connect the cable separately by
+                                        hand.
                                     </p>
                                 </div>
 
@@ -379,18 +486,33 @@
                                 <div class="project-text">
                                     <span class="project-step">Step 6</span>
 
-                                    <h3>Integration With the Airplane</h3>
+                                    <h3>Plane Side</h3>
 
                                     <p>
-                                        Write your text here. Explain how the
-                                        building block fits into the airplane and
-                                        how it connects with the wing structure.
+                                        Here we have the plane side. From left to
+                                        right we have the two holes for the connector
+                                        plugs, then again the big hole for the carbon
+                                        rod, and the other rectangular hole for the
+                                        servo plug.
                                     </p>
 
                                     <p>
-                                        Describe the internal spaces, mounting
-                                        points, ventilation openings, and
-                                        electronic connections.
+                                        This side basically mirrors the connection
+                                        points of the wing. The carbon rod passes
+                                        through the complete fuselage and into both
+                                        wings, while the small connectors are pushed
+                                        through from inside the building block. When
+                                        the wing is pushed onto the fuselage, all four
+                                        connection points need to meet at nearly the
+                                        same time.
+                                    </p>
+
+                                    <p>
+                                        The difficult part was that the electrical
+                                        plug, the carbon rod and both connector plugs
+                                        all had very little room for error. If one
+                                        hole was slightly misplaced, the complete
+                                        wing would not slide into place properly.
                                     </p>
                                 </div>
 
@@ -413,19 +535,34 @@
                                 <div class="project-text">
                                     <span class="project-step">Step 7</span>
 
-                                    <h3>Constructing the Wings</h3>
+                                    <h3>Wing Inside</h3>
 
                                     <p>
-                                        Write your text here. Describe how the
-                                        wooden wing structures were constructed
-                                        and prepared for integration with the
-                                        building block.
+                                        Before this was all in CAD, but now we take
+                                        a look inside one of the real wings. You can
+                                        see the servo motor and the cable going
+                                        through the wooden structure towards the
+                                        inner side of the wing.
                                     </p>
 
                                     <p>
-                                        You can explain the materials, internal
-                                        ribs, servo wiring, covering, and other
-                                        construction details.
+                                        The servo plug was then glued into place so
+                                        that it can snap together with the plug on
+                                        the plane side. It had to be positioned quite
+                                        carefully, because the plug cannot move away
+                                        when the wing is pushed onto the fuselage.
+                                        Otherwise the two electrical connectors would
+                                        just push each other backwards instead of
+                                        connecting.
+                                    </p>
+
+                                    <p>
+                                        The small connector holes and the carbon rod
+                                        hole were also integrated into the wooden
+                                        structure. Since balsa wood is rather soft,
+                                        the areas around the holes needed enough
+                                        support to survive repeatedly attaching and
+                                        removing the wings.
                                     </p>
                                 </div>
 
@@ -451,16 +588,30 @@
                                     <h3>Installing the Electronics</h3>
 
                                     <p>
-                                        Write your text here. Describe how the
-                                        battery, flight controller, wiring, motor,
-                                        and other electronic components were
-                                        installed inside the building block.
+                                        Now we can just plug the wings in from the
+                                        left and the right and they hold onto the
+                                        airplane! The carbon rod goes through the
+                                        center of the fuselage and supports both
+                                        wings. It does limit the airflow a bit, but
+                                        well, trade-offs need to be made!
                                     </p>
 
                                     <p>
-                                        Explain how the building block provides
-                                        enough space, access, ventilation, and
-                                        support for the electronics.
+                                        Here in the building block the electronics
+                                        were added as well: the flight controller,
+                                        receiver, battery and all of the cables.
+                                        The EDF is mounted in the bottom section of
+                                        the plane and receives air through the front
+                                        opening.
+                                    </p>
+
+                                    <p>
+                                        There is not that much free space left inside,
+                                        so the electronics had to be arranged rather
+                                        tightly. Still, the important parts can be
+                                        accessed from the top, and the wings can be
+                                        removed without taking the electronics out of
+                                        the fuselage.
                                     </p>
                                 </div>
 
@@ -486,16 +637,31 @@
                                     <h3>Final Assembly</h3>
 
                                     <p>
-                                        Write your text here. Describe the final
-                                        assembly of the wings, building block,
-                                        motor, electronics, and other components.
+                                        Here one can see an almost finished plane,
+                                        where basically just the flaps are still
+                                        missing. Both wings are attached to the
+                                        purple building block, the electronics are
+                                        inside and the EDF is mounted in the lower
+                                        section.
                                     </p>
 
                                     <p>
-                                        Explain how the completed design
-                                        demonstrates interoperability between the
-                                        structural, mechanical, and electronic
-                                        parts of the airplane.
+                                        So my building block has become interoperable
+                                        since I can easily switch out the electronics
+                                        and the wings. The wing connection combines
+                                        the electrical servo plug, the structural
+                                        carbon rod and the small 3D printed connectors
+                                        in one system.
+                                    </p>
+
+                                    <p>
+                                        Instead of connecting every cable and using
+                                        screws every time, the wings can now simply
+                                        be pushed onto the fuselage until everything
+                                        snaps into place. It took quite a few
+                                        iterations, especially for the connector
+                                        tolerances, but in the end all the different
+                                        parts work together.
                                     </p>
                                 </div>
 
